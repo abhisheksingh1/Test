@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'GliderSDK'
+  s.name             = 'TestSDK'
   s.version          = '1.0.0'
-  s.summary          = 'Use Glider services'
+  s.summary          = 'Use Test services'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
 TODO:Under Development
                        DESC
 
-  s.homepage         = 'https://github.com/abhisheksnapwiz/GliderSDK'
+  s.homepage         = 'https://github.com/abhisheksingh1/Test.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'abhisheksnapwiz' => 'abhishek.singh@snapwiz.com' }
+  s.author           = 'abhisheks'
   #s.source           = { :git => 'https://github.com/abhisheksnapwiz/GliderSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
