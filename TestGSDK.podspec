@@ -30,7 +30,7 @@ TODO:Under Development
 
 
  
-  s.source           = { :http => 'https://s3.amazonaws.com/steplr-d/dummy/GliderSDK.zip'}
+  s.source           = { :git => 'https://github.com/abhisheksingh1/Test.git'}
   # s.ios.vendored_frameworks = 'GliderSDK.framework'
   #s.preserve_paths = "GliderSDK.framework"
   s.vendored_frameworks = 'GliderSDK.framework'
