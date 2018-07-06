@@ -33,8 +33,8 @@ TODO:Under Development
   s.source           = { :http => 'https://s3.amazonaws.com/steplr-d/dummy/GliderSDK.zip'}
   # s.ios.vendored_frameworks = 'GliderSDK.framework'
   #s.preserve_paths = "GliderSDK.framework"
-  # s.vendored_frameworks = 'GliderSDK.framework'
-  # s.resource = 'GliderSDK.bundle'
+  s.vendored_frameworks = 'GliderSDK.framework'
+  s.resource = 'GliderSDK.bundle'
 
 
   s.ios.deployment_target = '9.0'
