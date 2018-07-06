@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'TestSDK'
+  s.name             = 'TestGSDK'
   s.version          = '1.0.0'
   s.summary          = 'Use Test services'
 
@@ -23,8 +23,8 @@ TODO:Under Development
 
   s.homepage         = 'https://github.com/abhisheksingh1/Test.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = 'abhisheks'
+  #s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'abhisheksnapwiz' => 'abhishek.singh@snapwiz.com' }
   #s.source           = { :git => 'https://github.com/abhisheksnapwiz/GliderSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -33,8 +33,8 @@ TODO:Under Development
   s.source           = { :http => 'https://s3.amazonaws.com/steplr-d/dummy/GliderSDK.zip'}
   # s.ios.vendored_frameworks = 'GliderSDK.framework'
   #s.preserve_paths = "GliderSDK.framework"
-  s.vendored_frameworks = 'GliderSDK.framework'
-  s.resource = 'GliderSDK.bundle'
+  # s.vendored_frameworks = 'GliderSDK.framework'
+  # s.resource = 'GliderSDK.bundle'
 
 
   s.ios.deployment_target = '9.0'
