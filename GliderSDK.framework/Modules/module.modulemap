@@ -1,0 +1,11 @@
+framework module GliderSDK {
+  umbrella header "GliderSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module GliderSDK.Swift {
+    header "GliderSDK-Swift.h"
+    requires objc
+}
