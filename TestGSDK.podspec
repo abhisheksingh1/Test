@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TestGSDK'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Use Test services'
 
 # This description is used to generate tags and improve search results.
@@ -30,11 +30,11 @@ TODO:Under Development
 
 
  
-  s.source           = { :git => 'https://github.com/abhisheksingh1/Test.git'}
+  s.source           = { :git => 'https://github.com/abhisheksingh1/Test.git', :tag => s.version.to_s }
   # s.ios.vendored_frameworks = 'GliderSDK.framework'
-  #s.preserve_paths = "GliderSDK.framework"
-  s.vendored_frameworks = 'GliderSDK.framework'
-  s.resource = 'GliderSDK.bundle'
+  s.preserve_paths = "GliderSDK.framework"
+  # s.ios.vendored_frameworks = "GliderSDK.framework"
+  s.resource = "GliderSDK.bundle"
 
 
   s.ios.deployment_target = '9.0'
@@ -60,6 +60,6 @@ TODO:Under Development
   s.dependency 'Meteor'
   
   # $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking"
-  # s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$\"(PODS_ROOT)/GliderSDK/**\"" }
+  s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$\"(PODS_ROOT)/GliderSDK/**\"", "LD_RUNPATH_SEARCH_PATHS" => "@loader_path/../Frameworks" }
 
 end
