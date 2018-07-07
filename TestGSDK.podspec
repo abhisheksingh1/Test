@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TestGSDK'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Use Test services'
 
 # This description is used to generate tags and improve search results.
@@ -30,10 +30,10 @@ TODO:Under Development
 
 
  
-  s.source           = { :git => 'https://github.com/abhisheksingh1/Test.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/abhisheksingh1/Test.git', :Branch => 'master'}
   # s.ios.vendored_frameworks = 'GliderSDK.framework'
   s.preserve_paths = "GliderSDK.framework"
-  # s.ios.vendored_frameworks = "GliderSDK.framework"
+  s.ios.vendored_frameworks = "GliderSDK.framework"
   s.resource = "GliderSDK.bundle"
 
 
