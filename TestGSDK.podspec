@@ -30,11 +30,11 @@ TODO:Under Development
 
 
  
-  s.source           = { :git => 'https://github.com/abhisheksingh1/Test.git', :Branch => 'master'}
+  s.source           = { :git => 'https://github.com/abhisheksingh1/Test.git', :branch => 'master'}
   # s.ios.vendored_frameworks = 'GliderSDK.framework'
-  s.preserve_paths = "GliderSDK.framework"
-  s.ios.vendored_frameworks = "GliderSDK.framework"
-  s.resource = "GliderSDK.bundle"
+  s.preserve_paths = 'GlidrSDK.framework'
+  s.vendored_frameworks = 'GliderSDK.framework'
+  s.resource = 'GliderSDK.bundle'
 
 
   s.ios.deployment_target = '9.0'
