@@ -24,15 +24,17 @@ TODO:Under Development
   s.homepage         = 'https://github.com/abhisheksingh1/Test.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   #s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'abhisheksnapwiz' => 'abhishek.singh@snapwiz.com' }
+  s.author           = 'abhisheksnapwiz'
   #s.source           = { :git => 'https://github.com/abhisheksnapwiz/GliderSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
 
  
   s.source           = { :git => 'https://github.com/abhisheksingh1/Test.git', :branch => 'master'}
+  # s.source           = { :http => 'https://s3.amazonaws.com/steplr-d/dummy/GliderSDK.zip'}
+  # s.source           = { :http => 'http://172.20.10.2:8000'}
   # s.ios.vendored_frameworks = 'GliderSDK.framework'
-  s.preserve_paths = 'GlidrSDK.framework'
+  # s.preserve_paths = 'GlidrSDK.framework'
   s.vendored_frameworks = 'GliderSDK.framework'
   s.resource = 'GliderSDK.bundle'
 
@@ -55,11 +57,10 @@ TODO:Under Development
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   #s.dependency 'Meteor', 'https://github.com/abhisheksingh1/meteor-ios.git', 'develop'
-  s.frameworks = 'UIKit'
+  s.frameworks = 'UIKit', 'Foundation'
   s.dependency 'OpenTok'
   s.dependency 'Meteor'
   
-  # $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking"
   s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$\"(PODS_ROOT)/GliderSDK/**\"", "LD_RUNPATH_SEARCH_PATHS" => "@loader_path/../Frameworks" }
 
 end
