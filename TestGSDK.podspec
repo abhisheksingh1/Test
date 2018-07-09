@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TestGSDK'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Use Test services'
 
 # This description is used to generate tags and improve search results.
@@ -30,13 +30,13 @@ TODO:Under Development
 
 
  
-  s.source           = { :git => 'https://github.com/abhisheksingh1/Test.git', :branch => 'master'}
+  s.source           = { :http => 'https://s3.amazonaws.com/steplr-d/dummy/GliderSDK.zip'}
   # s.source           = { :http => 'https://s3.amazonaws.com/steplr-d/dummy/GliderSDK.zip'}
   # s.source           = { :http => 'http://172.20.10.2:8000'}
   # s.ios.vendored_frameworks = 'GliderSDK.framework'
   # s.preserve_paths = 'GlidrSDK.framework'
-  s.vendored_frameworks = 'GliderSDK.framework'
-  s.resource = 'GliderSDK.bundle'
+  s.vendored_frameworks = 'GliderSDK/GliderSDK.framework'
+  s.resource = 'GliderSDK/GliderSDK.bundle'
 
 
   s.ios.deployment_target = '9.0'
@@ -45,22 +45,18 @@ TODO:Under Development
 
 
   # s.source_files = 'GliderSDK/Classes/**/*'
-  
   # s.resource_bundles = {
   #   'GliderSDK' => ['GliderSDK/Assets/*.png']
   # }
-
-   # s.resource_bundles = {
-   #  'GliderSDK' => ['GliderSDK/Classes/*.xib', 'GliderSDK/Assets/**/*.png']
-   # }
-
+  # s.resource_bundles = {
+  #  'GliderSDK' => ['GliderSDK/Classes/*.xib', 'GliderSDK/Assets/**/*.png']
+  # }
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  #s.dependency 'Meteor', 'https://github.com/abhisheksingh1/meteor-ios.git', 'develop'
-  s.frameworks = 'UIKit', 'Foundation'
+
+  s.frameworks = 'UIKit'  #, 'Foundation'
   s.dependency 'OpenTok'
   s.dependency 'Meteor'
-  
-  s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$\"(PODS_ROOT)/GliderSDK/**\"", "LD_RUNPATH_SEARCH_PATHS" => "@loader_path/../Frameworks" }
+
+  # s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$\"(PODS_ROOT)/GliderSDK/**\"", "LD_RUNPATH_SEARCH_PATHS" => "@loader_path/../Frameworks" }
 
 end
